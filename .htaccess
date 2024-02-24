@@ -1,0 +1,10 @@
+# Redirigir todas las solicitudes que no sean archivos o directorios existentes al archivo index.php
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}.php -f
+RewriteRule ^([^/]+)/?$ $1.php [L]
+
+#Evitar ver contenido de carpetas
+Options -Indexes
+ErrorDocument 403 /error.html
+ErrorDocument 404 /error.html

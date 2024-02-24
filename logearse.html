@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" id="facebook">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/daily.css">
+    <title>Daily - Iniciar sesion</title>
+</head>
+<body>
+    <div id="globalContainer">
+        <div id="content">
+            <div class="space"><br><br><br><br></div>
+            <div class="index_content">
+                <div class="in_title">
+                    <p class="title">Daily Experience</p>
+                    <h2>Comparte tus reseñas y experiencias en cualquier lugar. Ayuda a otros a descubrir nuevos lugares y disfrutar de experiencias únicas.</h2>
+                </div>
+                <div class="form_new in_form">
+                    <form method="post">
+                        <input type="email" name="correo" id="correo" class="form_input" placeholder="Correo electrónico" autocomplete="false" required>
+                        <div class="space"></div>
+                        <input type="password" name="password" id="password" class="form_input" placeholder="Contraseña" maxlength="32" autocomplete="false" required>
+                        <input type="checkbox" id="showPassword"><label for="showPassword">Mostrar contraseña</label>
+                        <div class="space"></div>
+                        <button type="submit" class="form_btn">Iniciar sesión</button>
+                        <div class="space"></div>
+                        <a href="#" class="form-a">¿Olvidaste tu contraseña?</a>
+                        <div class="space hr"></div>
+                    </form>
+                    <button class="btn bg-green">
+                        <a href="#">Crear cuenta nueva</a>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+<script>
+const showPasswordCheckbox = document.getElementById('showPassword');
+const passwordInput = document.getElementById('password');
+
+showPasswordCheckbox.addEventListener('click', function () {
+    if (showPasswordCheckbox.checked) {
+        passwordInput.setAttribute('type', 'text');
+    } else {
+        passwordInput.setAttribute('type', 'password');
+    }
+});
+</script>
+</body>
+</html>

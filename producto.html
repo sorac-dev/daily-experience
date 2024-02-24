@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tienda</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+  <script src="assets/js/app.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    
+<header>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        
+            <nav class="navbar">
+                <div class="navbar-left">
+                  <a href="#" class="navbar-brand"><img src="assets/images/logo.png" alt="Logo" ></a>
+                  <ul class="navbar-social">
+                    <li><a href="#"><i class="bi bi-facebook"></i></a></li>
+                    <li><a href="#"><i class="bi bi-instagram"></i></i></a></li>
+                    <li><a href="#"><i class="bi bi-discord"></i></a></li>
+                    <li><a href="#"><i class="bi bi-chat-left-text" title="Foro"></i></a></li>
+                  </ul>
+                </div>
+                <form action="" method="get" class="buscar-nav">
+                  <input type="search" name="buscar" id="buscar" placeholder="Buscar cuentas, productos digitales y mas...">
+                  <button type="submit"><i class="bi bi-search"></i></button>
+                </form>
+                <div class="navbar-right">
+                  <ul class="navbar-nav">
+                    <div class="user-nav">
+                      <img src="./assets/images/noavatar.png" alt="avatar" class="avatar-nav">
+                      <font class="tUser-nav">Sorac</font>
+                      <img src="./assets/images/tokens.png" alt="tokens" class="tokens-nav">
+                      <font class="t-tokens" title="Con esto puedes comprar en el sitio.">$98 Tokens</font>
+                    </div>
+                  </ul>
+            </div>
+        </nav> 
+    </div>
+</header>
+<div class="product-container">
+  <div class="product-image-carousel">
+      <img src="assets/images/producto.png" alt="">
+  </div>
+  <div class="product-info">
+      <div class="product-title">Cuenta de XXXXXXXXXXXXX X meses</div>
+      <p class="product-price"><font>Costo: </font><img src="assets/images/tokens.png" class="tokens-nav"> $12 Tokens</p>
+      <p class="product-stock">Stocks disponibles</p>
+      <div class="product-quantity">
+          Cantidad: 
+          <select>
+              <option>1 unidad</option>
+              <option>2 unidades</option>
+              <option>3 unidades</option>
+          </select> <span class="q-span">(10 disponibles)</span>
+      </div>
+      <button class="buy-button">Comprar ahora</button>
+      <p></p>
+      <p></p>
+  </div>
+</div>
+<div class="product-details">
+  <h2>Información del producto</h2>
+  <br>
+  <div class="p-owner">
+    <h4>Datos del vendedor:</h4>
+    <img src="assets/images/noavatar.png">
+    <p>Carlos Esteban</p>
+    <ul>
+      <li>Correo de contacto: sorac.dev@gmail.com</li>
+      <li>Fehca de registro: 30/03/2023</li>
+      <li>Productos totales vendidos: 15</li>
+    </ul>
+    <button style="float:right;">Contactar</button>
+  </div>
+</div>
+<button class="report-button">Reportar producto</button>
+</body>
+</html>

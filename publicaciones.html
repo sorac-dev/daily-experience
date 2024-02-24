@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en" id="daily">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/daily.css">
+    <title>Daily - Iniciar sesion</title>
+</head>
+<body>
+  <header>
+    <div class="collapse navbar-collapse" id="navbarNav">
+            <nav class="navbar">
+                <div class="navbar-left">
+                  <h2 class="navbar-brand">#DailyExperience</h2>
+                  <ul class="navbar-social">
+                    <li><a href="#"><i class="bi bi-facebook"></i></a></li>
+                    <li><a href="#"><i class="bi bi-instagram"></i></i></a></li>
+                    <li><a href="#"><i class="bi bi-discord"></i></a></li>
+                  </ul>
+                </div>
+                <form action="" method="get" class="navbar-buscar f-inline">
+                  <input type="search" name="buscar" id="buscar" placeholder="Buscas un lugar en especifico?" class="input_text_global">
+                  <button type="submit" class="btn-new"><i class="bi bi-search" style="color:var(--text-white);"></i></button>
+                </form>
+                <div class="navbar-right">
+                  <div class="user-nav">
+                    <img src="./assets/images/perfil/noavatar.png" alt="avatar" class="avatar-nav">
+                    <font class="tUser-nav">Sorac Developer</font>
+                    <a href="salir.php"><button  class="navar_boton_a"><i class="bi bi-door-open-fill"></i> Salir </button></a>
+                  </div>
+            </div>
+        </nav> 
+    </div>
+  </header>
+    <div id="globalContainer" class="flex_center">
+      <div class="flex-coloums">
+          <!--Formulario para hacer una publicación-->
+          <div class="p_container">
+            <form method="post" enctype="multipart/form-data">
+              <h2>Crear una nueva publicacón</h2>
+              <div class="p_contenido">
+                <textarea name="mensaje" cols="30" rows="10" class="form_textarea" placeholder="¿Que experiencia quieres compartir?"></textarea>
+              </div>
+              <label class="f-inline p_label_ubicacion"><img src="/assets/images/icons/ubicacion.png" width="25px"> ¿Donde estas?: <input type="text" name="direccion" class="input-text" placeholder="Dirección o lugar especifico."></label>
+              <div class="p_footer">
+                <div class="f-right">
+                  <button class="btn-new bg-grisdc subirImage" disabled> Subir imágenes</button>
+                  <button type="submit" class="btn-new bg-green" disabled> Publicar</button>
+                </div>
+              </div>
+            </form>
+          </div>
+          <!--Comienza contenido de las publicaciones-->
+          <div class="space"></div>
+          <div class="publicaciones" id="publicaciones">
+            <div class="container_publis">
+              <div class="card_publi">
+                <div class="card_publi_head f-inline">
+                  <i class="bi bi-patch-check-fill verificado"></i>
+                  <img src="/assets/images/perfil/noavatar.png" alt="noavatar" class="foto_perfil">
+                  <p>Sorac Developer</p>
+                </div>
+                <div class="card_publi_contenido">
+                  <p>Este pollo en salsa de la casa de un restaurante gourmet es una verdadera delicia. El pollo está tierno y jugoso, y la salsa es suave, cremosa y perfectamente equilibrada en sabor. ¡Una experiencia culinaria inolvidable! <font class="hashtag">#restaurante #gourmet #nuevo #culinario</font></p>
+                  <img src="/assets/images/comidas/comida.jpg" alt="comida" class="card_publi_contenido_imagen">
+                </div>
+                <div class="card_contenido_ubicacion">
+                  <span class="card_text_ubicacion">Calle 00 # 00-00, Cerca de X parte</span>
+                </div>
+              </div>
+              <div class="card_publi">
+                <div class="card_publi_head f-inline">
+                  <i class="bi bi-patch-check-fill verificado"></i>
+                  <img src="/assets/images/perfil/noavatar.png" alt="noavatar" class="foto_perfil">
+                  <p>Sorac Developer</p>
+                </div>
+                <div class="card_publi_contenido">
+                  <p>Nojoda que vaina tan buena ve, no habia probado un platillo tan espectacular! <font class="hashtag">#restaurante #gourmet #nuevo #culinario</font></p>
+                  <img src="/assets/images/comidas/comida2.jpg" alt="comida" class="card_publi_contenido_imagen">
+                </div>
+                <div class="card_contenido_ubicacion">
+                  <span class="card_text_ubicacion">Calle 00 # 00-00, Cerca de X parte</span>
+                </div>
+              </div>
+              <div class="card_publi">
+                <div class="card_publi_head f-inline">
+                  <i class="bi bi-patch-check-fill verificado"></i>
+                  <img src="/assets/images/perfil/noavatar.png" alt="noavatar" class="foto_perfil">
+                  <p>Sorac Developer</p>
+                </div>
+                <div class="card_publi_contenido">
+                  <p>La decoración y el ambiente de este restaurante son simplemente increíbles. Además, la música clásica de fondo añade un toque de elegancia y sofisticación. Sin duda, recomiendo este lugar ¡muchísimo! <font class="hashtag">#restaurante #gourmet #culinario</font></p>
+                  <img src="/assets/images/comidas/comida3.jpg" alt="comida" class="card_publi_contenido_imagen">
+                </div>
+                <div class="card_contenido_ubicacion">
+                  <span class="card_text_ubicacion">Calle 00 # 00-00, Cerca de X parte</span>
+                </div>
+              </div>
+              <div class="card_publi">
+                <div class="card_publi_head f-inline">
+                  <i class="bi bi-patch-check-fill verificado"></i>
+                  <img src="/assets/images/perfil/noavatar.png" alt="noavatar" class="foto_perfil">
+                  <p>Sorac Developer</p>
+                </div>
+                <div class="card_publi_contenido">
+                  <p>Esto no puede ser un restaurante gourmet, pero joda que vaina tan buena esos tacos. Me hace recordar mi viaje a Ciudad de Mexico <font class="hashtag">#mexico #tacos #callejera #comida #ambulantes</font></p>
+                  <img src="/assets/images/comidas/comida4.jpg" alt="comida" class="card_publi_contenido_imagen">
+                </div>
+                <div class="card_contenido_ubicacion">
+                  <span class="card_text_ubicacion">Calle 00 # 00-00, Cerca de X parte</span>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+</body>
+</html>
